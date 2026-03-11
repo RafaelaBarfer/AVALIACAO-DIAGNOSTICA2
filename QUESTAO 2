@@ -1,0 +1,21 @@
+using System;
+namespace AvaliacaoDiagnostica {
+    class questao02 {
+static void Main ()
+{
+
+Console.Write("Número inicial: ");
+int inicio = int.Parse(Console.ReadLine());
+Console.Write("Número final: ");
+int fim = int.Parse(Console.ReadLine());
+
+if (inicio < fim) {
+    for (int i = inicio; i <= fim; i++) {
+        Console.Write(i + " ");
+    }
+} else {
+    Console.WriteLine("Erro: O número inicial deve ser menor que o final.");
+}
+}
+}
+}
