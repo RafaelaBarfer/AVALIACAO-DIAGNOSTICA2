@@ -1,0 +1,20 @@
+using System;
+namespace AvaliacaoDiagnostica {
+    class questao03 {
+static void Main ()
+{
+
+double[] numeros = new double[10];
+for (int i = 0; i < 10; i++) {
+    Console.Write($"Digite o {i+1}º número: ");
+    numeros[i] = double.Parse(Console.ReadLine());
+}
+
+double maior = numeros[0];
+foreach (double num in numeros) {
+    if (num > maior) maior = num;
+}
+Console.WriteLine($"O maior número é: {maior}");
+}
+}
+}
